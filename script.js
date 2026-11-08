@@ -30,10 +30,11 @@
     if (swing) swing.style.animation = 'none';
     if (glare) glare.style.background = 'radial-gradient(circle at ' + Math.round(x * 100) + '% ' + Math.round(y * 100) + '%, rgba(255,255,255,0.45), rgba(255,255,255,0) 55%)';
   });
-  tilt.addEventListener('pointerleave', function () {
+  function reset() {
     tilt.style.transition = 'transform 0.7s cubic-bezier(.2,.8,.2,1)';
     tilt.style.transform = 'rotateX(0deg) rotateY(0deg)';
     if (swing) swing.style.animation = '';
     if (glare) glare.style.background = rest;
-  });
+  }
+  ['pointerleave', 'pointerup', 'pointercancel'].forEach(function (t) { tilt.addEventListener(t, reset); });
 })();
