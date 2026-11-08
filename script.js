@@ -16,6 +16,23 @@
     });
   }
 
+  var header = document.querySelector('.site-header');
+  var menuBtn = document.getElementById('menu-btn');
+  if (header && menuBtn) {
+    var en = root.lang === 'en';
+    var setMenu = function (open) {
+      header.setAttribute('data-open', open ? 'true' : 'false');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menuBtn.setAttribute('aria-label', open ? (en ? 'Close menu' : 'Fermer le menu') : (en ? 'Open menu' : 'Ouvrir le menu'));
+    };
+    menuBtn.addEventListener('click', function () { setMenu(header.getAttribute('data-open') !== 'true'); });
+    header.querySelectorAll('.site-nav a').forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && header.getAttribute('data-open') === 'true') { setMenu(false); menuBtn.focus(); }
+    });
+    matchMedia('(min-width: 1001px)').addEventListener('change', function (e) { if (e.matches) setMenu(false); });
+  }
+
   var tilt = document.getElementById('badge-tilt');
   var swing = document.getElementById('badge-swing');
   var glare = document.getElementById('badge-glare');
