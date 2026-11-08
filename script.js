@@ -2,7 +2,8 @@
   var root = document.documentElement;
   var btn = document.getElementById('theme-toggle');
   function label() {
-    var t = root.dataset.theme === 'dark' ? 'Passer en mode clair' : 'Passer en mode sombre';
+    var en = root.lang === 'en', dark = root.dataset.theme === 'dark';
+    var t = en ? (dark ? 'Switch to light mode' : 'Switch to dark mode') : (dark ? 'Passer en mode clair' : 'Passer en mode sombre');
     btn.setAttribute('aria-label', t);
     btn.setAttribute('title', t);
   }
