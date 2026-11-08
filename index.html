@@ -1,100 +1,257 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/fa62c117c7.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>Mohamed CISSE</title>
-  </head>
-  <body class="dark" id="top">
-    <header class="header center">
-      <h3>
-        <p>MC.</>
-      </h3>
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohamed CISSE · Ingénieur logiciel, Dakar</title>
+<meta name="description" content="Mohamed CISSE, ingénieur logiciel à Dakar depuis 2015. Je dirige une équipe de développement, je conçois des applications web et mobiles et j'administre les serveurs qui les hébergent.">
+<meta property="og:title" content="Mohamed CISSE · Ingénieur logiciel, Dakar">
+<meta property="og:description" content="Développement web et mobile, infrastructure, conseil.">
+<meta property="og:image" content="https://ceessay.github.io/img/mohamed-cisse.webp">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://ceessay.github.io/">
+<script>try{var t=localStorage.getItem('theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;500;600&amp;family=Instrument+Serif:ital@1&amp;display=swap">
+<style>
+:root{--bg:#F2F3F5;--ink:#0F1420;--muted:#3E4450;--glass:rgba(255,255,255,0.58);--glass-edge:rgba(255,255,255,0.85);--card:#FFFFFF;--shadow:rgba(20,24,43,0.06);--accent:#2443C7;--accent-ink:#2443c7;--accent-big:#2443c7;--on-accent:#FFFFFF;color-scheme:light}
+:root[data-theme="dark"]{--bg:#0B0F17;--ink:#E8EBF2;--muted:#A6AEBD;--glass:rgba(30,36,52,0.55);--glass-edge:rgba(255,255,255,0.10);--card:#161C28;--shadow:rgba(0,0,0,0.35);--accent:#2443C7;--accent-ink:#667bd8;--accent-big:#455fcf;--on-accent:#FFFFFF;color-scheme:dark}
+html{scroll-behavior:smooth}
+#top{transition:background-color .4s ease,color .4s ease}
+:root[data-theme="dark"] .icon-moon,:root:not([data-theme="dark"]) .icon-sun{display:none}
+img{max-width:100%}
+body{margin:0;background:var(--bg)}
+a{color:var(--accent-ink)}a:hover{color:var(--ink)}
+@keyframes badge-swing{0%,100%{transform:rotate(-1.6deg)}50%{transform:rotate(1.6deg)}}
+.badge-col{padding-top:0}
+@media (max-width: 900px){.badge-col{padding-top:110px}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+<div id="top" style="position: relative; overflow: hidden; background: var(--bg); color: var(--ink); transition: background-color 0.4s ease, color 0.4s ease; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-size: 16px; line-height: 1.6">
+
+  <div aria-hidden="true" style="position: absolute; top: -220px; left: -200px; width: 720px; height: 720px; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--accent) 28%, transparent), color-mix(in srgb, var(--accent) 0%, transparent) 70%); filter: blur(30px)"></div>
+  <div aria-hidden="true" style="position: absolute; top: 120px; right: -240px; width: 760px; height: 760px; border-radius: 50%; background: radial-gradient(circle, rgba(70,170,220,0.20), rgba(232,150,90,0) 70%); filter: blur(30px)"></div>
+  <div aria-hidden="true" style="position: absolute; top: 2050px; right: -260px; width: 820px; height: 820px; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--accent) 24%, transparent), transparent 70%); filter: blur(40px)"></div>
+  <div aria-hidden="true" style="position: absolute; top: 2700px; left: -220px; width: 760px; height: 760px; border-radius: 50%; background: radial-gradient(circle, rgba(70,170,220,0.18), transparent 70%); filter: blur(40px)"></div>
+  <div aria-hidden="true" style="position: absolute; top: 1300px; left: 20%; width: 900px; height: 900px; border-radius: 50%; background: radial-gradient(circle, rgba(110,140,230,0.18), rgba(120,160,230,0) 70%); filter: blur(40px)"></div>
+
+  <div style="position: relative; max-width: 1240px; margin: 0 auto; padding: 24px 32px 0; box-sizing: border-box">
+
+    <header style="position: relative; z-index: 5; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px 24px; padding: 10px 10px 10px 24px; border-radius: 0; background-color: var(--glass); backdrop-filter: blur(22px) saturate(170%); -webkit-backdrop-filter: blur(22px) saturate(170%); border: 1px solid rgba(255,255,255,0.8); box-shadow: none; border-color: color-mix(in srgb, var(--ink) 12%, transparent)">
+      <a href="#top" style="font-weight: 600; text-decoration: none; color: var(--ink)">Mohamed <span style="color: var(--accent-ink)">CISSE</span></a>
+      <nav aria-label="Navigation principale" style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px 22px; font-size: 15px">
+        <a href="#services" style="text-decoration: none; color: var(--muted)">Services</a>
+        <a href="#projets" style="text-decoration: none; color: var(--muted)">Projets</a>
+        <a href="#competences" style="text-decoration: none; color: var(--muted)">Compétences</a>
+        <a href="#parcours" style="text-decoration: none; color: var(--muted)">Parcours</a>
+        <button type="button" id="theme-toggle" aria-label="Passer en mode sombre" title="Passer en mode sombre" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 1px solid color-mix(in srgb, var(--ink) 18%, transparent); background: transparent; color: var(--ink); cursor: pointer">
+            <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+            <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg>
+        </button>
+        <a href="#contact" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 0; background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 500">Me contacter</a>
+      </nav>
     </header>
 
-    <main>
-      <!-- About -->
-      <div class="about center">
-        <h1>Hi, I am <span class="about__name">Mohamed CISSE.</span></h1>
-        <h2 class="about__role">Software Developer.</h2>
-        <p class="about__desc">
-          I am a developer from Dakar, Sénégal 🇸🇳, West Africa. <br>
-          I have experience in web and mobile application development. I have a genuine interest in people and their projects, it is essential to their
-          success. Let's get in touch 😊
-        </p>
-
-        <div class="about__contact center">
-
-          <a
-            href="https://github.com/ceessay"
-            aria-label="github"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-
-          <a
-            href="https://linkedin.com/in/ceessay"
-            aria-label="linkedin"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
-          </a>
+    <section id="top" style="display: flex; flex-wrap: wrap; align-items: center; gap: 48px; padding: 72px 0 80px">
+      <div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
+        <p style="margin: 0; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-ink)">Ingénieur logiciel · depuis 2015 · Dakar</p>
+        <h1 style="margin: 0; font-family: Anton, Impact, 'Arial Narrow', sans-serif; font-weight: 400; font-size: clamp(76px, 12vw, 176px); line-height: 0.88; letter-spacing: -0.01em; text-transform: uppercase; color: var(--accent-big)">Mohamed<br>Cisse</h1>
+        <div style="width: 48px; height: 3px; background: var(--accent)"></div>
+        <p style="margin: 0; max-width: 46ch; font-size: 18px; color: var(--muted); text-wrap: pretty">Je dirige une équipe de développement et je conçois des applications web et mobiles. J'administre aussi les serveurs qui les hébergent et j'accompagne des organisations dans leurs projets numériques.</p>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px">
+          <a href="#projets" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; border-radius: 0; background: var(--ink); color: var(--bg); text-decoration: none; font-weight: 500">Voir les projets</a>
+          <a href="mailto:m.ceessay@gmail.com" style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 14px; color: var(--ink); text-decoration: none; border-bottom: 1.5px solid var(--accent); padding-bottom: 2px">m.ceessay@gmail.com →</a>
         </div>
       </div>
 
+      <div class="badge-col" style="flex: 1 1 360px; display: flex; justify-content: center">
+        <div style="position: relative; width: 300px; padding-top: 128px; transform-origin: 50% -40px; animation: badge-swing 6s ease-in-out infinite" id="badge-swing">
+          <div aria-hidden="true" style="position: absolute; left: 50%; top: -96px; width: 28px; height: 210px; margin-left: -14px; background: var(--accent); -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 70px); mask-image: linear-gradient(to bottom, transparent 0, #000 70px); box-shadow: inset 4px 0 0 rgba(255,255,255,0.18), inset -4px 0 0 rgba(0,0,0,0.12)"></div>
+          <div style="perspective: 1000px">
+            <div id="badge-tilt" style="position: relative; transform: rotateX(0deg) rotateY(0deg); transform-origin: 50% -22px; transition: transform 0.7s cubic-bezier(.2,.8,.2,1); touch-action: none; cursor: grab">
+            <div role="img" aria-label="Badge de Mohamed CISSE, ingénieur logiciel et chef d'équipe" style="position: relative; overflow: hidden; border-radius: 14px; background: var(--card); box-shadow: 0 30px 60px rgba(15,20,32,0.18), 0 2px 6px rgba(15,20,32,0.08)">
+              <div style="position: relative; height: 64px; background: var(--accent); display: flex; justify-content: space-between; align-items: flex-end; padding: 0 18px 12px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 11px; letter-spacing: 0.08em; color: color-mix(in srgb, var(--on-accent) 85%, transparent)">
+                <div aria-hidden="true" style="position: absolute; left: 50%; top: 14px; width: 56px; height: 10px; margin-left: -28px; border-radius: 6px; background: var(--bg); box-shadow: inset 0 2px 3px rgba(15,20,32,0.35)"></div>
+                <span>DAKAR · SN</span>
+                <span>DEPUIS 2015</span>
+              </div>
+              <div style="margin: 18px 18px 0; aspect-ratio: 1 / 1; overflow: hidden; background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 14%, var(--card)), color-mix(in srgb, var(--accent) 6%, var(--card)))">
+                <img src="img/mohamed-cisse.webp" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0">
+              </div>
+              <div style="padding: 16px 18px 0; display: flex; flex-direction: column; gap: 4px">
+                <span style="font-family: Anton, Impact, 'Arial Narrow', sans-serif; font-size: 34px; line-height: 1; text-transform: uppercase; color: var(--accent-big)">Mohamed Cisse</span>
+                <span style="font-size: 14px; font-weight: 600; color: var(--ink)">Ingénieur logiciel · Chef d'équipe</span>
+                <span style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 11px; color: var(--muted)">Développement · Infrastructure · Conseil</span>
+              </div>
+              <div aria-hidden="true" style="margin: 16px 18px 18px; height: 36px; background: repeating-linear-gradient(90deg, var(--ink) 0 2px, transparent 2px 4px, var(--ink) 4px 5px, transparent 5px 8px, var(--ink) 8px 11px, transparent 11px 13px)"></div>
+              <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; background: radial-gradient(circle at 50% 30%, rgba(255,255,255,0.18), rgba(255,255,255,0) 55%)" id="badge-glare"></div>
+            </div>
+            <div aria-hidden="true" style="position: absolute; left: 50%; top: -22px; width: 34px; height: 40px; margin-left: -17px; border-radius: 4px; background: linear-gradient(90deg, #9AA1AD, #E3E6EB 45%, #B4BAC4); box-shadow: 0 2px 4px rgba(15,20,32,0.3)">
+              <div style="position: absolute; left: 6px; right: 6px; top: 6px; height: 8px; border-radius: 2px; background: rgba(15,20,32,0.35)"></div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section id="services" style="padding: 24px 0 112px">
+      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 36px">
+        <h2 style="margin: 0; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-ink); white-space: nowrap">Ce que je fais</h2>
+        <div style="flex: 1; height: 1px; background: color-mix(in srgb, var(--accent) 25%, transparent)"></div>
+      </div>
+      <p style="margin: 0; max-width: 24em; font-size: clamp(28px, 3.4vw, 48px); font-weight: 500; line-height: 1.38; letter-spacing: -0.025em; color: var(--ink); text-wrap: pretty">Je dirige <a href="#parcours" style="display: inline; padding: 0 3px; background: linear-gradient(transparent 60%, color-mix(in srgb, var(--accent) 18%, transparent) 60%); color: var(--accent-ink); text-decoration: none; -webkit-box-decoration-break: clone; box-decoration-break: clone">des équipes de développement<sup style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 0.32em; font-weight: 500; margin-left: 4px; vertical-align: 1.6em">01</sup></a>. Avec elles, je construis <a href="#projets" style="display: inline; padding: 0 3px; background: linear-gradient(transparent 60%, color-mix(in srgb, var(--accent) 18%, transparent) 60%); color: var(--accent-ink); text-decoration: none; -webkit-box-decoration-break: clone; box-decoration-break: clone">des sites web<sup style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 0.32em; font-weight: 500; margin-left: 4px; vertical-align: 1.6em">02</sup></a>, <a href="#projets" style="display: inline; padding: 0 3px; background: linear-gradient(transparent 60%, color-mix(in srgb, var(--accent) 18%, transparent) 60%); color: var(--accent-ink); text-decoration: none; -webkit-box-decoration-break: clone; box-decoration-break: clone">des applications mobiles<sup style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 0.32em; font-weight: 500; margin-left: 4px; vertical-align: 1.6em">03</sup></a> et <a href="#projets" style="display: inline; padding: 0 3px; background: linear-gradient(transparent 60%, color-mix(in srgb, var(--accent) 18%, transparent) 60%); color: var(--accent-ink); text-decoration: none; -webkit-box-decoration-break: clone; box-decoration-break: clone">des plateformes métier<sup style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 0.32em; font-weight: 500; margin-left: 4px; vertical-align: 1.6em">04</sup></a>. Je fais tourner <a href="#projets" style="display: inline; padding: 0 3px; background: linear-gradient(transparent 60%, color-mix(in srgb, var(--accent) 18%, transparent) 60%); color: var(--accent-ink); text-decoration: none; -webkit-box-decoration-break: clone; box-decoration-break: clone">les serveurs<sup style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 0.32em; font-weight: 500; margin-left: 4px; vertical-align: 1.6em">05</sup></a> qui les hébergent, et je forme <a href="#parcours" style="display: inline; padding: 0 3px; background: linear-gradient(transparent 60%, color-mix(in srgb, var(--accent) 18%, transparent) 60%); color: var(--accent-ink); text-decoration: none; -webkit-box-decoration-break: clone; box-decoration-break: clone">les personnes<sup style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 0.32em; font-weight: 500; margin-left: 4px; vertical-align: 1.6em">06</sup></a> qui les utilisent.</p>
+    </section>
 
-      <!-- Skills -->
-      <section class="section skills" id="skills">
-        <h2 class="section__title">Some tools I use</h2>
-        <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">JavaScript</li>
-          <li class="skills__list-item btn btn--plain">TypeScript</li>
-          <li class="skills__list-item btn btn--plain">React-Native / Expo</li>
-          <li class="skills__list-item btn btn--plain">React</li>
-          <li class="skills__list-item btn btn--plain">Node.js</li>
-          <li class="skills__list-item btn btn--plain">NextJS</li>
-          <li class="skills__list-item btn btn--plain">Express JS</li>
-          <li class="skills__list-item btn btn--plain">Git</li>
-          <li class="skills__list-item btn btn--plain">MongoDB</li>
-        </ul>
-      </section>
+    <section id="projets" style="padding: 0 0 96px">
+      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 40px">
+        <h2 style="margin: 0; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-ink); white-space: nowrap">Projets</h2>
+        <div style="flex: 1; height: 1px; background: color-mix(in srgb, var(--accent) 25%, transparent)"></div>
+      </div>
 
-      <!-- Contact -->
-      <section class="section contact center" id="contact">
-        <h2 class="section__title">Contact</h2>
-        <a href="mailto:m.ceessay@gmail.com">
-          <span class="btn btn--outline">Email me</span>
-        </a>
-      </section>
-    </main>
+      <article style="display: flex; flex-wrap: wrap; align-items: center; gap: 48px 64px; padding-bottom: 72px">
+        <div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+          <span style="font-family: Anton, Impact, sans-serif; font-size: 96px; line-height: 0.8; color: transparent; -webkit-text-stroke: 1.5px var(--accent-big)">01</span>
+          <h3 style="margin: 0; font-family: Anton, Impact, 'Arial Narrow', sans-serif; font-weight: 400; font-size: clamp(48px, 6vw, 84px); line-height: 0.9; text-transform: uppercase; color: var(--accent-big)"><a href="https://silo.sn" style="color: var(--accent-big); text-decoration: none">Silo</a></h3>
+          <p style="margin: 0; max-width: 44ch; color: var(--muted); font-size: 17px">Plateforme de transport de personnes au Sénégal : réservation de trajets, suivi du chauffeur en temps réel, paiement mobile et programme de fidélité. Je suis cofondateur et je réalise toute la partie technique, des applications aux serveurs.</p>
+          <dl style="margin: 8px 0 0; display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 8px 16px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px">
+            <dt style="color: var(--accent-ink)">Rôle</dt><dd style="margin: 0; color: var(--ink)">Cofondateur, responsable technique</dd>
+            <dt style="color: var(--accent-ink)">Applications</dt><dd style="margin: 0; color: var(--ink)">Passager, chauffeur, back-office, API</dd>
+            <dt style="color: var(--accent-ink)">Depuis</dt><dd style="margin: 0; color: var(--ink)">2025</dd>
+          </dl>
+          <a href="https://silo.sn" style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 14px; width: fit-content">silo.sn ↗</a>
+        </div>
+        <div style="flex: 1.4 1 480px; min-width: 0; position: relative; padding: 0 0 56px 48px">
+          <div style="overflow: hidden; background-color: var(--glass); backdrop-filter: blur(22px) saturate(170%); -webkit-backdrop-filter: blur(22px) saturate(170%); border: 1px solid var(--glass-edge); box-shadow: 0 24px 60px rgba(20,24,43,0.10)">
+            <div style="display: flex; align-items: center; gap: 7px; padding: 11px 16px; border-bottom: 1px solid color-mix(in srgb, var(--accent) 12%, transparent)">
+              <span style="width: 10px; height: 10px; border-radius: 50%; background: #C9CED6"></span>
+              <span style="width: 10px; height: 10px; border-radius: 50%; background: #DADDE3"></span>
+              <span style="width: 10px; height: 10px; border-radius: 50%; background: #E6E8EC"></span>
+              <span style="margin-left: 12px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 12px; color: var(--muted)">silo.sn</span>
+            </div>
+            <img src="img/silo-site.webp" alt="Page d'accueil du site Silo" style="display: block; width: 100%; height: auto">
+          </div>
+          <div style="position: absolute; left: 0; bottom: 0; width: 26%; min-width: 110px; aspect-ratio: 9 / 19; border-radius: 26px; padding: 7px; background: #0B0E14; box-shadow: 0 24px 50px rgba(20,24,43,0.25); box-sizing: border-box">
+            <img src="img/silo-chauffeur.webp" alt="Application chauffeur Silo : navigation vers le passager" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 20px">
+          </div>
+        </div>
+      </article>
 
-    <footer class="footer">
-      <p class="footer__link" >
-        Mohamed CISSE
-      </>
-    </footer>
+      <ol style="list-style: none; margin: 0; padding: 0; border-top: 1px solid color-mix(in srgb, var(--accent) 30%, transparent)">
+        <li style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 32px; padding: 26px 0; border-bottom: 1px solid color-mix(in srgb, var(--accent) 30%, transparent)">
+          <span style="flex: 0 0 40px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--accent-ink)">02</span>
+          <h3 style="flex: 1 1 300px; margin: 0; font-family: Anton, Impact, 'Arial Narrow', sans-serif; font-weight: 400; font-size: clamp(34px, 4vw, 56px); line-height: 1; text-transform: uppercase; color: var(--ink)">Sentinel</h3>
+          <p style="flex: 2 1 320px; margin: 0; color: var(--muted); font-size: 15px">Suivi en temps réel de la consommation d'énergie et de la production, relié à des équipements connectés. En service dans des bâtiments publics et chez des industriels. Je dirige l'équipe de développement.<br><span style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 12px; color: var(--accent-ink)">Web, mobile, IoT · 2020 –</span></p>
+          <span style="width: 18px"></span>
+        </li>
+        <li style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 32px; padding: 26px 0; border-bottom: 1px solid color-mix(in srgb, var(--accent) 30%, transparent)">
+          <span style="flex: 0 0 40px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--accent-ink)">03</span>
+          <h3 style="flex: 1 1 300px; margin: 0; font-family: Anton, Impact, 'Arial Narrow', sans-serif; font-weight: 400; font-size: clamp(34px, 4vw, 56px); line-height: 1; text-transform: uppercase; color: var(--ink)"><a href="https://labizy.com" style="color: var(--ink); text-decoration: none">Labizy</a></h3>
+          <p style="flex: 2 1 320px; margin: 0; color: var(--muted); font-size: 15px">Gestion de laboratoires d'analyses biomédicales, de la facturation aux résultats. Projet dont je suis cofondateur.<br><span style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 12px; color: var(--accent-ink)">Application web · 2021 –</span></p>
+          <a href="https://labizy.com" aria-label="Ouvrir Labizy" style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 18px; text-decoration: none">↗</a>
+        </li>
+        <li style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 32px; padding: 26px 0; border-bottom: 1px solid color-mix(in srgb, var(--accent) 30%, transparent)">
+          <span style="flex: 0 0 40px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--accent-ink)">04</span>
+          <h3 style="flex: 1 1 300px; margin: 0; font-family: Anton, Impact, 'Arial Narrow', sans-serif; font-weight: 400; font-size: clamp(34px, 4vw, 56px); line-height: 1; text-transform: uppercase; color: var(--ink)"><a href="https://formations.senlabodakar.com" style="color: var(--ink); text-decoration: none">SenLabo Training</a></h3>
+          <p style="flex: 2 1 320px; margin: 0; color: var(--muted); font-size: 15px">Plateforme de formation à distance : installation, configuration et administration.<br><span style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 12px; color: var(--accent-ink)">E-learning, Moodle · 2026</span></p>
+          <a href="https://formations.senlabodakar.com" aria-label="Ouvrir SenLabo Training" style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 18px; text-decoration: none">↗</a>
+        </li>
+        <li style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 32px; padding: 26px 0; border-bottom: 1px solid color-mix(in srgb, var(--accent) 30%, transparent)">
+          <span style="flex: 0 0 40px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--accent-ink)">05</span>
+          <h3 style="flex: 1 1 300px; margin: 0; font-family: Anton, Impact, 'Arial Narrow', sans-serif; font-weight: 400; font-size: clamp(34px, 4vw, 56px); line-height: 1; text-transform: uppercase; color: var(--ink)"><a href="https://cger.sn" style="color: var(--ink); text-decoration: none">CGER</a></h3>
+          <p style="flex: 2 1 320px; margin: 0; color: var(--muted); font-size: 15px">Refonte d'un site institutionnel, avec récupération des données de l'ancien site.<br><span style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 12px; color: var(--accent-ink)">Site web · 2025</span></p>
+          <a href="https://cger.sn" aria-label="Ouvrir CGER" style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 18px; text-decoration: none">↗</a>
+        </li>
+        <li style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 32px; padding: 26px 0; border-bottom: 1px solid color-mix(in srgb, var(--accent) 30%, transparent)">
+          <span style="flex: 0 0 40px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--accent-ink)">06</span>
+          <h3 style="flex: 1 1 300px; margin: 0; font-family: Anton, Impact, 'Arial Narrow', sans-serif; font-weight: 400; font-size: clamp(34px, 4vw, 56px); line-height: 1; text-transform: uppercase; color: var(--ink)"><a href="https://repsao.org" style="color: var(--ink); text-decoration: none">REPSAO</a></h3>
+          <p style="flex: 2 1 320px; margin: 0; color: var(--muted); font-size: 15px">Plateforme d'un réseau de recherche ouest-africain, puis migration et optimisation.<br><span style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 12px; color: var(--accent-ink)">Site web · 2024</span></p>
+          <a href="https://repsao.org" aria-label="Ouvrir REPSAO" style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 18px; text-decoration: none">↗</a>
+        </li>
+        <li style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 32px; padding: 26px 0; border-bottom: 1px solid color-mix(in srgb, var(--accent) 30%, transparent)">
+          <span style="flex: 0 0 40px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--accent-ink)">07</span>
+          <h3 style="flex: 1 1 300px; margin: 0; font-family: Anton, Impact, 'Arial Narrow', sans-serif; font-weight: 400; font-size: clamp(34px, 4vw, 56px); line-height: 1; text-transform: uppercase; color: var(--ink)">FANUS 2023</h3>
+          <p style="flex: 2 1 320px; margin: 0; color: var(--muted); font-size: 15px">Conférence internationale : soumission des résumés, billetterie, programme.<br><span style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 12px; color: var(--accent-ink)">Plateforme événementielle · 2023</span></p>
+          <span style="width: 18px"></span>
+        </li>
+      </ol>
+    </section>
 
-    <div class="scroll-container">
-    <div class="scroll-top">
-      <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
-      </a>
+    <section id="competences" style="padding: 0 0 88px">
+      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 28px">
+        <h2 style="margin: 0; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-ink); white-space: nowrap">Compétences</h2>
+        <div style="flex: 1; height: 1px; background: color-mix(in srgb, var(--accent) 25%, transparent)"></div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr)); gap: 20px">
+        <div style="padding: 28px 30px; background-color: var(--glass); backdrop-filter: blur(22px) saturate(170%); -webkit-backdrop-filter: blur(22px) saturate(170%); border: 1px solid var(--glass-edge); box-shadow: 0 14px 34px var(--shadow)">
+          <h3 style="margin: 0 0 14px; font-family: Anton, Impact, 'Arial Narrow', sans-serif; font-weight: 400; font-size: 34px; line-height: 1; text-transform: uppercase; color: var(--ink)">Savoir-faire</h3>
+          <ul style="list-style: none; margin: 0; padding: 0">
+            <li style="display: flex; flex-direction: column; gap: 2px; padding: 14px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent)"><span style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--accent-ink)">Développement</span><span style="color: var(--muted); font-size: 15px">TypeScript, Node.js, PHP / Laravel, React, Next.js, React Native, API REST</span></li>
+            <li style="display: flex; flex-direction: column; gap: 2px; padding: 14px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent)"><span style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--accent-ink)">Infrastructure et sécurité</span><span style="color: var(--muted); font-size: 15px">Linux, Docker, Nginx, AWS, VPS, OpenVPN, sécurisation des serveurs, supervision, sauvegardes</span></li>
+            <li style="display: flex; flex-direction: column; gap: 2px; padding: 14px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent)"><span style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--accent-ink)">Données</span><span style="color: var(--muted); font-size: 15px">PostgreSQL, MongoDB, Redis, tableaux de bord en temps réel</span></li>
+            <li style="display: flex; flex-direction: column; gap: 2px; padding: 14px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent)"><span style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--accent-ink)">Conseil</span><span style="color: var(--muted); font-size: 15px">Diagnostic de systèmes d'information, cahier des charges, architecture</span></li>
+            <li style="display: flex; flex-direction: column; gap: 2px; padding: 14px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent)"><span style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--accent-ink)">Outils d'IA</span><span style="color: var(--muted); font-size: 15px">Claude Code, Cursor et Codex, utilisés au quotidien dans mon développement</span></li>
+          </ul>
+        </div>
+        <div style="padding: 28px 30px; background-color: var(--glass); backdrop-filter: blur(22px) saturate(170%); -webkit-backdrop-filter: blur(22px) saturate(170%); border: 1px solid var(--glass-edge); box-shadow: 0 14px 34px var(--shadow)">
+          <h3 style="margin: 0 0 14px; font-family: Anton, Impact, 'Arial Narrow', sans-serif; font-weight: 400; font-size: 34px; line-height: 1; text-transform: uppercase; color: var(--ink)">Savoir-être</h3>
+          <ul style="list-style: none; margin: 0; padding: 0">
+            <li style="padding: 16px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent); font-size: 20px; font-weight: 500; letter-spacing: -0.01em; color: var(--ink)">Direction d'équipes techniques</li>
+            <li style="padding: 16px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent); font-size: 20px; font-weight: 500; letter-spacing: -0.01em; color: var(--ink)">Gestion de projets de développement</li>
+            <li style="padding: 16px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent); font-size: 20px; font-weight: 500; letter-spacing: -0.01em; color: var(--ink)">Transmission et formation</li>
+            <li style="padding: 16px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent); font-size: 20px; font-weight: 500; letter-spacing: -0.01em; color: var(--ink)">Communication avec des publics non techniques</li>
+            <li style="padding: 16px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent); font-size: 20px; font-weight: 500; letter-spacing: -0.01em; color: var(--ink)">Autonomie et esprit d'initiative</li>
+            <li style="padding: 16px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent); font-size: 20px; font-weight: 500; letter-spacing: -0.01em; color: var(--ink)">Résolution de problèmes concrets</li>
+            <li style="padding: 16px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent); font-size: 20px; font-weight: 500; letter-spacing: -0.01em; color: var(--ink)">Travail en équipe pluridisciplinaire</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="parcours" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr)); gap: 20px; padding: 0 0 96px">
+      <div style="border-radius: 0; padding: 28px 30px; background-color: var(--glass); backdrop-filter: blur(22px) saturate(170%); -webkit-backdrop-filter: blur(22px) saturate(170%); border: 1px solid var(--glass-edge); box-shadow: 0 14px 34px var(--shadow)">
+        <h2 style="margin: 0 0 18px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-ink)">Parcours</h2>
+        <ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
+          <li style="display: flex; gap: 18px; padding: 12px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent)"><span style="flex: 0 0 96px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--accent-ink)">2025–</span><span><strong style="font-weight: 600">Cofondateur et responsable technique</strong><br><span style="color: var(--muted); font-size: 15px">Silo, plateforme de mobilité</span></span></li>
+          <li style="display: flex; gap: 18px; padding: 12px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent)"><span style="flex: 0 0 96px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--accent-ink)">2025–2026</span><span><strong style="font-weight: 600">Expert national en outils digitaux</strong><br><span style="color: var(--muted); font-size: 15px">Speedykom-GFA, mission pour la GIZ</span></span></li>
+          <li style="display: flex; gap: 18px; padding: 12px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent)"><span style="flex: 0 0 96px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--accent-ink)">2020–</span><span><strong style="font-weight: 600">Chef d'équipe de développement</strong><br><span style="color: var(--muted); font-size: 15px">Houdatech-Sentinel · création et encadrement de l'équipe</span></span></li>
+          <li style="display: flex; gap: 18px; padding: 12px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent)"><span style="flex: 0 0 96px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--accent-ink)">2019–2020</span><span><strong style="font-weight: 600">Ingénieur logiciel mobile</strong><br><span style="color: var(--muted); font-size: 15px">Teranga Business Solutions</span></span></li>
+          <li style="display: flex; gap: 18px; padding: 12px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent)"><span style="flex: 0 0 96px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--accent-ink)">2018–2019</span><span><strong style="font-weight: 600">Développeur full stack</strong><br><span style="color: var(--muted); font-size: 15px">Indépendant</span></span></li>
+          <li style="display: flex; gap: 18px; padding: 12px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent)"><span style="flex: 0 0 96px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--accent-ink)">2016–2018</span><span><strong style="font-weight: 600">Formateur en développement</strong><br><span style="color: var(--muted); font-size: 15px">Bakeli School of Technology</span></span></li>
+          <li style="display: flex; gap: 18px; padding: 12px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent)"><span style="flex: 0 0 96px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--accent-ink)">2015–2018</span><span><strong style="font-weight: 600">Développeur, puis directeur technique</strong><br><span style="color: var(--muted); font-size: 15px">Volkeno · recrutement et encadrement des développeurs</span></span></li>
+        </ol>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 20px">
+        <div style="border-radius: 0; padding: 28px 30px; background-color: var(--glass); backdrop-filter: blur(22px) saturate(170%); -webkit-backdrop-filter: blur(22px) saturate(170%); border: 1px solid var(--glass-edge); box-shadow: 0 14px 34px var(--shadow)">
+          <h2 style="margin: 0 0 18px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 14px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-ink)">Formation</h2>
+          <ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
+            <li style="display: flex; gap: 18px; padding: 12px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent)"><span style="flex: 0 0 96px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--accent-ink)">2015</span><span><strong style="font-weight: 600">Master 1 Systèmes d'information et Génie logiciel</strong><br><span style="color: var(--muted); font-size: 15px">MIT University, Dakar</span></span></li>
+            <li style="display: flex; gap: 18px; padding: 12px 0; border-top: 1px solid color-mix(in srgb, var(--accent) 15%, transparent)"><span style="flex: 0 0 96px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--accent-ink)">2014</span><span><strong style="font-weight: 600">Licence en Génie informatique</strong><br><span style="color: var(--muted); font-size: 15px">Université Iba Der Thiam, Thiès</span></span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer id="contact" style="position: relative; background: var(--accent); color: var(--on-accent)">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 72px 32px 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 48px">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 32px">
+        <h2 style="margin: 0; flex: 1 1 460px; font-size: clamp(40px, 5.5vw, 76px); font-weight: 600; line-height: 1; letter-spacing: -0.03em">Un projet en tête&nbsp;? <span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-weight: 400; color: color-mix(in srgb, var(--on-accent) 75%, transparent)">Parlons-en.</span></h2>
+        <div style="display: flex; flex-direction: column; gap: 8px; font-size: 18px">
+          <a href="mailto:m.ceessay@gmail.com" style="color: var(--on-accent)">m.ceessay@gmail.com</a>
+          <span>+221 76 014 17 30</span>
+          <span style="display: flex; gap: 20px"><a href="https://linkedin.com/in/ceessay" style="color: var(--on-accent)">LinkedIn</a><a href="https://github.com/ceessay" style="color: var(--on-accent)">GitHub</a></span>
+        </div>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding-top: 20px; border-top: 1px solid color-mix(in srgb, var(--on-accent) 25%, transparent); font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: color-mix(in srgb, var(--on-accent) 75%, transparent)">
+        <span>Mohamed CISSE · Dakar, Sénégal</span>
+      </div>
     </div>
-    </div>
+  </footer>
 
-  </body>
+</div>
+<script src="script.js" defer></script>
+</body>
 </html>
