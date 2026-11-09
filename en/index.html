@@ -92,25 +92,53 @@ a{color:var(--accent-ink)}a:hover{color:var(--ink)}
       </div>
 
       <div class="badge-col" style="flex: 1 1 360px; display: flex; justify-content: center">
-        <div style="position: relative; width: 300px; padding-top: 128px; transform-origin: 50% -40px; animation: badge-swing 6s ease-in-out infinite" id="badge-swing">
+        <div style="position: relative; width: min(360px, 100%); padding-top: 128px; transform-origin: 50% -40px; animation: badge-swing 6s ease-in-out infinite" id="badge-swing">
           <div aria-hidden="true" style="position: absolute; left: 50%; top: -96px; width: 28px; height: 210px; margin-left: -14px; background: var(--accent); -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 70px); mask-image: linear-gradient(to bottom, transparent 0, #000 70px); box-shadow: inset 4px 0 0 rgba(255,255,255,0.18), inset -4px 0 0 rgba(0,0,0,0.12)"></div>
           <div style="perspective: 1000px">
             <div id="badge-tilt" style="position: relative; transform: rotateX(0deg) rotateY(0deg); transform-origin: 50% -22px; transition: transform 0.7s cubic-bezier(.2,.8,.2,1); touch-action: pan-y; cursor: grab">
-            <div role="img" aria-label="ID badge of Mohamed CISSE, software engineer and team lead" style="position: relative; overflow: hidden; border-radius: 14px; background: var(--card); box-shadow: 0 30px 60px rgba(15,20,32,0.18), 0 2px 6px rgba(15,20,32,0.08)">
-              <div style="position: relative; height: 64px; background: var(--accent); display: flex; justify-content: space-between; align-items: flex-end; padding: 0 18px 12px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 11px; letter-spacing: 0.08em; color: color-mix(in srgb, var(--on-accent) 85%, transparent)">
+            <div role="img" aria-label="Profile badge of Mohamed CISSE, software engineer and tech lead" style="position: relative; overflow: hidden; border-radius: 14px; background: var(--card); box-shadow: 0 30px 60px rgba(15,20,32,0.18), 0 2px 6px rgba(15,20,32,0.08)">
+              <div style="position: relative; height: 72px; background: var(--accent); display: flex; justify-content: space-between; align-items: flex-end; padding: 0 20px 14px; font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 12px; letter-spacing: 0.08em; color: color-mix(in srgb, var(--on-accent) 85%, transparent)">
                 <div aria-hidden="true" style="position: absolute; left: 50%; top: 14px; width: 56px; height: 10px; margin-left: -28px; border-radius: 6px; background: var(--bg); box-shadow: inset 0 2px 3px rgba(15,20,32,0.35)"></div>
-                <span>DAKAR · SN</span>
+                <span>PROFILE</span>
                 <span>SINCE 2015</span>
               </div>
-              <div style="margin: 18px 18px 0; aspect-ratio: 1 / 1; overflow: hidden; background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 14%, var(--card)), color-mix(in srgb, var(--accent) 6%, var(--card)))">
-                <img src="../img/mohamed-cisse.webp" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0">
+              <div style="display: flex; gap: 16px; align-items: flex-end; padding: 20px 20px 18px">
+                <div style="width: 120px; height: 120px; flex: none; overflow: hidden; background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 14%, var(--card)), color-mix(in srgb, var(--accent) 6%, var(--card)))">
+                  <img src="../img/mohamed-cisse.webp" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0">
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 6px">
+                  <span style="font-family: Anton, Impact, 'Arial Narrow', sans-serif; font-size: 38px; line-height: 0.95; text-transform: uppercase; color: var(--ink)">Mohamed<br>Cisse</span>
+                  <span style="font-size: 13.5px; font-weight: 600; line-height: 1.35; color: var(--muted)">Software engineer<br>Tech lead</span>
+                </div>
               </div>
-              <div style="padding: 16px 18px 0; display: flex; flex-direction: column; gap: 4px">
-                <span style="font-family: Anton, Impact, 'Arial Narrow', sans-serif; font-size: 34px; line-height: 1; text-transform: uppercase; color: var(--accent-big)">Mohamed Cisse</span>
-                <span style="font-size: 14px; font-weight: 600; color: var(--ink)">Software engineer · Tech lead</span>
-                <span style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 11px; color: var(--muted)">Development · Infrastructure · Consulting</span>
+              <div style="height: 1px; margin: 0 20px; background: color-mix(in srgb, var(--ink) 10%, transparent)"></div>
+              <div style="display: flex; align-items: baseline; gap: 12px; padding: 14px 20px">
+                <span style="font-family: Anton, Impact, 'Arial Narrow', sans-serif; font-size: 44px; line-height: 1; color: var(--accent-big)">10+</span>
+                <span style="font-size: 14.5px; color: var(--muted)">years of experience</span>
               </div>
-              <div aria-hidden="true" style="margin: 16px 18px 18px; height: 36px; background: repeating-linear-gradient(90deg, var(--ink) 0 2px, transparent 2px 4px, var(--ink) 4px 5px, transparent 5px 8px, var(--ink) 8px 11px, transparent 11px 13px)"></div>
+              <div style="height: 1px; margin: 0 20px; background: color-mix(in srgb, var(--ink) 10%, transparent)"></div>
+              <div style="padding: 14px 20px 20px; display: flex; flex-direction: column; gap: 10px">
+                <span style="font-family: Inter, 'Segoe UI', Arial, sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted)">Expertise</span>
+                <ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+                  <li style="display: flex; flex-direction: column; gap: 10px; padding: 12px; border: 1px solid color-mix(in srgb, var(--accent) 20%, transparent); background: color-mix(in srgb, var(--accent) 5%, var(--card))">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" aria-hidden="true" style="color: var(--accent-big)"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13.5 4.5l-3 15"></path></svg>
+                    <span style="font-size: 12.5px; font-weight: 600; line-height: 1.3; color: var(--ink)">Web and mobile development</span>
+                  </li>
+                  <li style="display: flex; flex-direction: column; gap: 10px; padding: 12px; border: 1px solid color-mix(in srgb, var(--accent) 20%, transparent); background: color-mix(in srgb, var(--accent) 5%, var(--card))">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" aria-hidden="true" style="color: var(--accent-big)"><rect x="3.5" y="4" width="17" height="7"></rect><rect x="3.5" y="13" width="17" height="7"></rect><path d="M7 7.5h2M7 16.5h2"></path></svg>
+                    <span style="font-size: 12.5px; font-weight: 600; line-height: 1.3; color: var(--ink)">Servers, networking and security</span>
+                  </li>
+                  <li style="display: flex; flex-direction: column; gap: 10px; padding: 12px; border: 1px solid color-mix(in srgb, var(--accent) 20%, transparent); background: color-mix(in srgb, var(--accent) 5%, var(--card))">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" aria-hidden="true" style="color: var(--accent-big)"><path d="M2.5 12h4l2.5-6 5 12 2.5-6h5"></path></svg>
+                    <span style="font-size: 12.5px; font-weight: 600; line-height: 1.3; color: var(--ink)">IoT and real-time data</span>
+                  </li>
+                  <li style="display: flex; flex-direction: column; gap: 10px; padding: 12px; border: 1px solid color-mix(in srgb, var(--accent) 20%, transparent); background: color-mix(in srgb, var(--accent) 5%, var(--card))">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" aria-hidden="true" style="color: var(--accent-big)"><rect x="9" y="3" width="6" height="5"></rect><rect x="3" y="16" width="6" height="5"></rect><rect x="15" y="16" width="6" height="5"></rect><path d="M12 8v4M6 16v-4h12v4"></path></svg>
+                    <span style="font-size: 12.5px; font-weight: 600; line-height: 1.3; color: var(--ink)">IT systems consulting</span>
+                  </li>
+                </ul>
+              </div>
+              <div style="display: flex; justify-content: space-between; gap: 12px; padding: 11px 20px; background: color-mix(in srgb, var(--accent) 8%, var(--card)); font-family: Inter, 'Segoe UI', Arial, sans-serif; font-size: 12px; color: var(--muted)"><span>Co-founder of Silo and Labizy</span><span>Dakar · SN</span></div>
               <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; background: radial-gradient(circle at 50% 30%, rgba(255,255,255,0.18), rgba(255,255,255,0) 55%)" id="badge-glare"></div>
             </div>
             <div aria-hidden="true" style="position: absolute; left: 50%; top: -22px; width: 34px; height: 40px; margin-left: -17px; border-radius: 4px; background: linear-gradient(90deg, #9AA1AD, #E3E6EB 45%, #B4BAC4); box-shadow: 0 2px 4px rgba(15,20,32,0.3)">
