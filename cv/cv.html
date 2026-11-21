@@ -7,29 +7,29 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&amp;display=swap">
 <style>
-@page { size: A4; margin: 12mm 0 12mm; }
+@page { size: A4; margin: 11mm 0 9mm; }
 @page :first { margin-top: 0; }
 * { box-sizing: border-box; }
 html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-body { margin: 0; font-family: 'Urbanist', system-ui, sans-serif; color: #083151; font-size: 9.7pt; line-height: 1.42; font-weight: 500; background: #FFFFFF; }
+body { margin: 0; font-family: 'Urbanist', system-ui, sans-serif; color: #083151; font-size: 9.2pt; line-height: 1.4; font-weight: 500; background: #FFFFFF; }
 a { color: inherit; text-decoration: none; }
 .page { padding: 0 15mm 12mm; }
 header {
-  color: #FFFFFF; padding: 13mm 15mm 10mm;
+  color: #FFFFFF; padding: 10mm 15mm 8mm;
   background: radial-gradient(55% 90% at 8% 100%, #45A6DC 0%, rgba(69,166,220,0) 70%), radial-gradient(45% 80% at 75% 20%, #8698E0 0%, rgba(134,152,224,0) 70%), radial-gradient(50% 70% at 0% 0%, #5B3F9F 0%, rgba(91,63,159,0) 70%), linear-gradient(160deg, #4258B0 0%, #3A6DC0 55%, #3B86CC 100%);
 }
 header .role { margin: 0; font-size: 12pt; font-weight: 600; letter-spacing: -0.01em; }
 header .role .sep { opacity: .55; font-weight: 400; margin: 0 .35em; }
-header h1 { margin: 2mm 0 0; font-size: 34pt; line-height: .9; font-weight: 700; letter-spacing: -0.035em; text-transform: uppercase; }
-header .contact { margin: 5mm 0 0; display: flex; flex-wrap: wrap; gap: 1mm 6mm; font-size: 9.5pt; font-weight: 600; color: #EAF1FA; }
-h2 { margin: 8mm 0 3mm; font-size: 15pt; line-height: 1; font-weight: 700; letter-spacing: -0.02em; break-after: avoid; }
-.intro { margin: 7mm 0 0; font-size: 11pt; font-weight: 600; line-height: 1.4; }
+header h1 { margin: 1.5mm 0 0; font-size: 30pt; line-height: .9; font-weight: 700; letter-spacing: -0.035em; text-transform: uppercase; }
+header .contact { margin: 4mm 0 0; display: flex; flex-wrap: wrap; gap: 1mm 6mm; font-size: 9.5pt; font-weight: 600; color: #EAF1FA; }
+h2 { margin: 6mm 0 2.5mm; font-size: 15pt; line-height: 1; font-weight: 700; letter-spacing: -0.02em; break-after: avoid; }
+.intro { margin: 6mm 0 0; font-size: 11pt; font-weight: 600; line-height: 1.4; }
 .tiles { margin-top: 4mm; display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm; }
 .tile { border-radius: 3mm; padding: 3mm 3.5mm; background: #F1F6FC; break-inside: avoid; }
 .tile:nth-child(2) { background: #E6F0FA; } .tile:nth-child(3) { background: #DAE8F7; } .tile:nth-child(4) { background: #CCE0F4; }
 .tile b { display: block; font-size: 10.5pt; font-weight: 700; margin-bottom: .8mm; }
 .tile span { color: #2E4D69; }
-.job { padding: 3mm 0 3.2mm; border-top: 1px solid #E3EAF0; }
+.job { padding: 2.4mm 0 2.6mm; border-top: 1px solid #E3EAF0; }
 .job-head, .job .org, .sub { break-after: avoid; }
 .job li { break-inside: avoid; }
 .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 4mm; }
@@ -44,7 +44,7 @@ h2 { margin: 8mm 0 3mm; font-size: 15pt; line-height: 1; font-weight: 700; lette
 .project { padding-top: 2mm; border-top: 1px solid #E3EAF0; break-inside: avoid; }
 .project b { font-size: 10.5pt; } .project .y { font-weight: 700; color: #1D5FD1; font-size: 9pt; margin-left: 1.5mm; }
 .project p { margin: .8mm 0 0; color: #36536B; } .project a { color: #1D5FD1; font-weight: 700; }
-.skills { display: grid; grid-template-columns: 44mm 1fr; gap: 1.6mm 5mm; }
+.skills { display: grid; grid-template-columns: 58mm 1fr; gap: 1.6mm 5mm; }
 .skills dt { font-weight: 700; } .skills dd { margin: 0; color: #36536B; }
 .two { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
 .edu p { margin: 0 0 1.6mm; } .edu b { display: block; } .edu span { color: #36536B; }
@@ -59,20 +59,13 @@ h2 { margin: 8mm 0 3mm; font-size: 15pt; line-height: 1; font-weight: 700; lette
 </header>
 
 <div class="page">
-  <p class="intro">Plus de dix ans à concevoir, développer et déployer des plateformes numériques, à administrer les serveurs qui les hébergent et à former les équipes qui les utilisent.</p>
-
-  <div class="tiles">
-    <div class="tile"><b>Secteur public</b><span>Plateforme de suivi énergétique déployée sur 28 sites publics (près de 1 500 équipements connectés) pour l’AEME. Expert national dans un programme financé par la GIZ.</span></div>
-    <div class="tile"><b>Systèmes et réseaux</b><span>Administration et sécurisation de serveurs Linux (VPS, AWS EC2), liaisons VPN entre sites industriels et serveurs, supervision et sauvegardes.</span></div>
-    <div class="tile"><b>Données et pilotage</b><span>Tableaux de bord en temps réel, indicateurs de consommation et de production.</span></div>
-    <div class="tile"><b>Formation</b><span>Près de deux ans comme formateur en développement ; formation des utilisateurs des outils déployés.</span></div>
-  </div>
+  <p class="intro">Plus de 10 ans d’expérience en développement de plateformes numériques, administration de serveurs et accompagnement d’institutions publiques.</p>
 
   <h2>Expérience professionnelle</h2>
 
   <div class="job">
-    <div class="job-head"><h3>Cofondateur et responsable technique</h3><span class="date">2025 – aujourd’hui</span></div>
-    <p class="org">Silo · Plateforme de mobilité · <a href="https://silo.sn">silo.sn</a></p>
+    <div class="job-head"><h3>Cofondateur et responsable technique</h3><span class="date">2025 – présent</span></div>
+    <p class="org">Silo · Plateforme de mobilité · <a href="https://silo.sn">silo.sn</a> · Sénégal</p>
     <ul>
       <li>Conception et développement de bout en bout de la plateforme de transport de personnes : applications passager et chauffeur, back-office, API.</li>
       <li>Choix techniques et infrastructure auto-hébergée : React Native, Laravel, PostgreSQL, Redis, suivi GPS en temps réel, cartographie OpenStreetMap. Application passager publiée sur Google Play.</li>
@@ -80,35 +73,40 @@ h2 { margin: 8mm 0 3mm; font-size: 15pt; line-height: 1; font-weight: 700; lette
   </div>
 
   <div class="job">
-    <div class="job-head"><h3>Expert national senior en développement d’outils digitaux</h3><span class="date">07/2025 – 11/2026</span></div>
-    <p class="org">GFA Consulting Group / Speedykom · Programme Énergies Durables (PED II), financé par la GIZ · mission de courte durée</p>
+    <div class="job-head"><h3>Expert national en développement d’outils digitaux</h3><span class="date">07/2025 – 11/2026</span></div>
+    <p class="org">Speedykom-GFA · Programme Énergies Durables (PED II), financé par la GIZ · mission de consultant de courte durée · Dakar</p>
     <ul>
-      <li>Entretiens d’état des lieux avec les équipes informatiques de plusieurs institutions du secteur de l’énergie (ministère, AEME, ASER, CRSE) et rédaction des fiches de synthèse.</li>
-      <li>Contribution au rapport d’état des lieux de la digitalisation du secteur de l’énergie, dont l’intégration des retours des partenaires.</li>
-      <li>Participation aux ateliers de restitution et de validation avec les institutions.</li>
+      <li>Diagnostic du numérique dans le secteur de l’énergie : entretiens avec le Ministère de l’Énergie et du Pétrole, l’AEME, l’ANER, l’ASER, la CRSE et Senelec, et évaluation de leurs systèmes d’information.</li>
+      <li>Présentation de l’état des lieux aux institutions lors de l’atelier de restitution ; participation à la co-construction de la stratégie numérique.</li>
     </ul>
   </div>
 
   <div class="job long">
-    <div class="job-head"><h3>Chef d’équipe de développement</h3><span class="date">04/2020 – aujourd’hui</span></div>
-    <p class="org">Houdatech · Sentinel · Dakar</p>
+    <div class="job-head"><h3>Chef d’équipe de développement</h3><span class="date">04/2020 – présent</span></div>
+    <p class="org">Houdatech-Sentinel · Dakar</p>
     <p class="sub">Déploiement dans les bâtiments publics (projet AEME)</p>
     <ul>
       <li>Supervision du déploiement de près de 1 500 équipements connectés sur 28 sites publics, dont le Ministère de l’Économie, des Finances et du Plan, le Ministère de la Santé et l’ONAS.</li>
       <li>Formation des gestionnaires d’énergie de chaque site à l’utilisation de la plateforme.</li>
     </ul>
+    <p class="sub">Industries et grands consommateurs</p>
+    <ul>
+      <li>Suivi énergétique de sites industriels et de grands consommateurs (hôtels notamment), à partir d’automates et de routeurs industriels connectés à la plateforme.</li>
+    </ul>
     <p class="sub">Plateforme Sentinel (web et mobile)</p>
     <ul>
-      <li>Direction de l’équipe de développement et de la conception de la plateforme ; intégration des équipements de plusieurs fournisseurs IoT dans une plateforme unique.</li>
-      <li>Énergie : suivi en temps réel des consommations, puissances, tensions et intensités ; automatismes d’allumage et d’extinction.</li>
-      <li>Production : tableaux de bord des arrêts machine et de leurs causes, des quantités produites et du taux de rendement (TRS), par machine, équipe et opérateur.</li>
-      <li>Suivi énergétique de sites industriels et de grands consommateurs (hôtels notamment) via automates et routeurs industriels.</li>
+      <li>Direction de l’équipe de développement et de la conception de la plateforme.</li>
+      <li>Volet énergie : suivi en temps réel des consommations (par période, par local, par personne), des puissances, tensions et intensités ; programmation d’automatismes d’allumage et d’extinction.</li>
+      <li>Volet production : tableaux de bord des arrêts machine et de leurs causes, des quantités produites et du taux de rendement (TRS), par machine, par équipe et par opérateur.</li>
+      <li>Intégration des équipements de plusieurs fournisseurs IoT dans une plateforme unique.</li>
     </ul>
     <p class="sub">Infrastructure et réseau</p>
     <ul>
       <li>Administration des serveurs de production (VPS Linux, AWS EC2) : Docker, Nginx, déploiement continu avec GitHub Actions.</li>
-      <li>Sécurisation (ufw, fail2ban, SSH par clé, mises à jour automatiques), supervision avec Sentry et OpenObserve.</li>
-      <li>Configuration des routeurs et des liaisons VPN (OpenVPN) entre sites industriels et serveurs ; synchronisation et sauvegarde (FreeFileSync, Syncthing).</li>
+      <li>Sécurisation des serveurs : pare-feu (ufw), protection contre les intrusions (fail2ban), accès SSH par clé uniquement, mises à jour de sécurité automatiques.</li>
+      <li>Supervision des applications et suivi des incidents avec Sentry et OpenObserve.</li>
+      <li>Configuration des routeurs (industriels et d’entreprise) et des liaisons VPN (OpenVPN) qui relient les sites industriels aux serveurs.</li>
+      <li>Synchronisation et sauvegarde des fichiers entre serveurs avec FreeFileSync et Syncthing.</li>
     </ul>
   </div>
 
@@ -116,15 +114,8 @@ h2 { margin: 8mm 0 3mm; font-size: 15pt; line-height: 1; font-weight: 700; lette
     <div class="job-head"><h3>Ingénieur logiciel mobile (React Native)</h3><span class="date">04/2019 – 04/2020</span></div>
     <p class="org">Teranga Business Solutions · Dakar</p>
     <ul>
-      <li>Développement de fonctionnalités (paiement, commandes, inscription) sur les applications mobiles des clients ; tests, publication sur les stores et stabilisation de code existant.</li>
-    </ul>
-  </div>
-
-  <div class="job">
-    <div class="job-head"><h3>Développeur full stack indépendant</h3><span class="date">03/2018 – 04/2019</span></div>
-    <p class="org">Freelance · Dakar</p>
-    <ul>
-      <li>Développement, déploiement et maintenance d’applications web et mobiles pour des clients ; gestion des contrats et de la facturation.</li>
+      <li>Développement de fonctionnalités (paiement, commandes, inscription) sur les applications mobiles des clients.</li>
+      <li>Tests et publication des applications sur les stores ; stabilisation de code existant.</li>
     </ul>
   </div>
 
@@ -135,54 +126,52 @@ h2 { margin: 8mm 0 3mm; font-size: 15pt; line-height: 1; font-weight: 700; lette
   </div>
 
   <div class="job">
-    <div class="job-head"><h3>Formateur et coach en développement web et mobile</h3><span class="date">06/2016 – 03/2018</span></div>
-    <p class="org">Bakeli School of Technology · Dakar</p>
-    <ul><li>Conception des programmes de formation (Android, JavaScript, React, Laravel, Angular) ; formation et suivi des apprenants, participation à leur recrutement.</li></ul>
+    <div class="job-head"><h3>Développeur full stack</h3><span class="date">03/2018 – 04/2019</span></div>
+    <p class="org">Freelance · Dakar</p>
+    <ul>
+      <li>Développement, déploiement et maintenance d’applications web et mobiles pour des clients.</li>
+      <li>Gestion des contrats et de la facturation.</li>
+    </ul>
   </div>
 
   <div class="job">
-    <div class="job-head"><h3>Développeur web et mobile, puis directeur technique</h3><span class="date">12/2015 – 03/2018</span></div>
+    <div class="job-head"><h3>Formateur et coach en développement web et mobile</h3><span class="date">06/2016 – 03/2018</span></div>
+    <p class="org">Bakeli School of Technology · Dakar</p>
+    <ul>
+      <li>Conception des programmes de formation (Android, JavaScript, React, Laravel, Angular).</li>
+      <li>Formation et suivi des apprenants ; participation à leur recrutement.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3>Développeur web et mobile, puis Directeur technique</h3><span class="date">12/2015 – 03/2018</span></div>
     <p class="org">Volkeno · Dakar</p>
     <ul>
-      <li>Direction technique d’une dizaine de projets clients (web et mobile) et des outils internes ; supervision des serveurs et de l’infrastructure.</li>
+      <li>Direction technique d’une dizaine de projets clients (web et mobile) et des outils internes.</li>
+      <li>Supervision des serveurs et de l’infrastructure.</li>
       <li>Recrutement et encadrement des développeurs juniors.</li>
     </ul>
   </div>
 
-  <h2>Projets réalisés</h2>
-  <div class="projects">
-    <div class="project"><b>CGER</b><span class="y">2025</span><p>Refonte complète du site d’un réseau de conseil aux producteurs agricoles de la vallée du fleuve Sénégal : récupération des données de l’ancien site, migration, nouveau design. <a href="https://cger.sn">cger.sn</a></p></div>
-    <div class="project"><b>REPSAO</b><span class="y">2024 – 2025</span><p>Développement, puis migration et optimisation de la plateforme du réseau de recherche sur les politiques publiques et les systèmes alimentaires en Afrique de l’Ouest. <a href="https://repsao.org">repsao.org</a></p></div>
-    <div class="project"><b>SenLabo Training</b><span class="y">2026</span><p>Installation, configuration et administration d’une plateforme de formation à distance (Moodle).</p></div>
-    <div class="project"><b>FANUS 2023</b><span class="y">2023</span><p>Plateforme d’une conférence internationale à Dakar : résumés, billetterie, programme.</p></div>
-    <div class="project"><b>Labizy</b><span class="y">depuis 2021</span><p>Application de gestion pour laboratoires d’analyses biomédicales, de la facturation aux résultats. Cofondateur.</p></div>
+  <div class="edu keep">
+    <h2>Formation</h2>
+    <p><b>Master 1 Systèmes d’information et Génie logiciel</b><span>MIT University, Dakar · 2014 – 2015</span></p>
+    <p><b>Licence en Génie informatique</b><span>Université Iba Der Thiam (ex-Université de Thiès) · 2011 – 2014</span></p>
   </div>
 
   <div>
   <h2>Compétences</h2>
   <dl class="skills">
-    <dt>Développement</dt><dd>Node.js / Express, PHP / Laravel, TypeScript, React, Next.js, React Native / Expo, API REST, RabbitMQ, GitHub Actions</dd>
     <dt>Systèmes et réseaux</dt><dd>Linux, VPS, AWS EC2, Nginx, Docker, routeurs industriels et d’entreprise, Zigbee</dd>
-    <dt>Sécurité et supervision</dt><dd>OpenVPN, ufw, fail2ban, SSH par clé, Sentry, OpenObserve, FreeFileSync, Syncthing, rclone</dd>
+    <dt>Sécurité, supervision et sauvegarde</dt><dd>OpenVPN, ufw, fail2ban, SSH par clé, Sentry, OpenObserve, FreeFileSync, Syncthing, rclone</dd>
+    <dt>Développement</dt><dd>Node.js / Express, PHP / Laravel, TypeScript, React, Next.js, React Native / Expo, API REST, RabbitMQ, GitHub Actions</dd>
     <dt>Bases de données</dt><dd>PostgreSQL, MongoDB, Redis</dd>
-    <dt>Données</dt><dd>Tableaux de bord web en temps réel, indicateurs de suivi (KPI, TRS), export et analyse sous Excel</dd>
-    <dt>Projets numériques</dt><dd>Recueil des besoins, état des lieux de systèmes d’information, cahier des charges, conduite de projet</dd>
-    <dt>Formation</dt><dd>Conception de programmes, formation des utilisateurs et des équipes techniques, e-learning (Moodle)</dd>
-    <dt>Outils d’IA</dt><dd>Claude Code, Cursor, Codex, utilisés au quotidien dans le développement</dd>
+    <dt>Données et tableaux de bord</dt><dd>Tableaux de bord web en temps réel, indicateurs de suivi (KPI, TRS), export et analyse sous Excel</dd>
+    <dt>Gestion de projets numériques</dt><dd>Diagnostic de SI, stratégie numérique</dd>
+    <dt>Formation</dt><dd>Conception de programmes, formation des utilisateurs et des équipes techniques</dd>
+    <dt>Outils d’IA pour le développement</dt><dd>Claude Code, Cursor, Codex</dd>
+    <dt>Langues</dt><dd>Français (courant), anglais (professionnel)</dd>
   </dl>
-  </div>
-
-  <div class="two keep">
-    <div class="edu">
-      <h2>Formation</h2>
-      <p><b>Master 1 Systèmes d’information et Génie logiciel</b><span>MIT University, Dakar · 2014 – 2015</span></p>
-      <p><b>Licence en Génie informatique</b><span>Université Iba Der Thiam (ex-Université de Thiès) · 2011 – 2014</span></p>
-    </div>
-    <div class="edu">
-      <h2>Langues</h2>
-      <p><b>Français</b><span>courant</span></p>
-      <p><b>Anglais</b><span>professionnel</span></p>
-    </div>
   </div>
 </div>
 </body>
