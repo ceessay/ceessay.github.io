@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script>document.documentElement.classList.add('js')</script>
 <script>(function(){try{var page=document.documentElement.lang;if(page!=='fr')return;if(/bot|crawl|spider|slurp|facebookexternalhit|whatsapp|linkedin|twitter|telegram|preview|headless|lighthouse|pagespeed|gtmetrix/i.test(navigator.userAgent))return;var pref=null;try{pref=localStorage.getItem('mcisse-lang')}catch(e){}if(pref!=='fr'&&pref!=='en'){var ls=(navigator.languages&&navigator.languages.length)?navigator.languages:[navigator.language||''];pref='fr';for(var i=0;i<ls.length;i++){var l=String(ls[i]).toLowerCase();if(l.indexOf('fr')===0){pref='fr';break}if(l.indexOf('en')===0){pref='en';break}}}if(pref!==page){location.replace((pref==='en'?'/en/':'/')+location.hash)}}catch(e){}})();</script>
 <title>Mohamed CISSE · Software engineer and digital solutions expert in Dakar</title>
@@ -20,17 +20,20 @@
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#4258B0">
+<meta name="theme-color" content="#495BB2">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-title" content="M. CISSE">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="preload" as="font" type="font/woff2" href="/fonts/urbanist-latin.woff2" crossorigin>
 <link rel="preload" as="image" href="/img/portrait-profil-1200.webp" imagesrcset="/img/portrait-profil-600.webp 600w, /img/portrait-profil-900.webp 900w, /img/portrait-profil-1200.webp 1200w" imagesizes="(max-width: 612px) calc(100vw - 12px), (max-width: 1050px) 600px, (max-width: 1490px) calc(45vw - 70px), 600px" fetchpriority="high">
 <style>@font-face{font-family:'Urbanist';font-style:normal;font-weight:100 900;font-display:swap;src:url(/fonts/urbanist-latin.woff2) format('woff2')}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Mohamed CISSE", "url": "https://mcisse.pro/", "jobTitle": "Software engineer, digital solutions expert", "email": "mailto:contact@mcisse.pro", "image": "https://mcisse.pro/img/portrait-profil-1200.webp", "address": {"@type": "PostalAddress", "addressLocality": "Dakar", "addressCountry": "SN"}, "sameAs": ["https://linkedin.com/in/ceessay", "https://github.com/ceessay"]}</script>
 <style>
-body{margin:0;background:#083151}
+body{margin:0;background:#495BB2;transition:background-color .3s ease;padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 ::selection{background:#083151;color:#FFFFFF}
 a{color:inherit;text-underline-offset:4px}
@@ -58,12 +61,13 @@ a:focus-visible{outline:2px solid #38A1DB;outline-offset:3px;border-radius:999px
 .tab{transition:transform .15s ease,background-color .2s ease}
 .tab:active{transform:scale(0.94);background-color:rgba(8,49,81,.08)}
 .tabbar{display:none}
+.topbar{padding-top:calc(24px + env(safe-area-inset-top))!important}.tabbar{bottom:calc(14px + env(safe-area-inset-bottom))!important;left:calc(12px + env(safe-area-inset-left))!important;right:calc(12px + env(safe-area-inset-right))!important}.statusbar{display:none}@media (display-mode:standalone){.statusbar{display:block;position:fixed;top:0;left:0;right:0;height:env(safe-area-inset-top);z-index:80;pointer-events:none;background-color:rgba(8,49,81,0);transition:background-color .3s ease}html[data-tint="clair"] .statusbar{background-color:rgba(8,49,81,.55);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}}
 .stickybar{display:none!important}html.js .stickybar{display:flex!important}html.js .topbar nav.seg{visibility:hidden}
 .stickybar .bar{transition:transform .45s cubic-bezier(.22,.8,.24,1),padding .45s cubic-bezier(.22,.8,.24,1),gap .45s cubic-bezier(.22,.8,.24,1),background-color .45s ease,box-shadow .45s ease,-webkit-backdrop-filter .45s ease,backdrop-filter .45s ease}.stickybar .bar a{white-space:nowrap;overflow:hidden;transition:color .35s ease,background-color .2s ease,padding .45s cubic-bezier(.22,.8,.24,1),max-width .45s cubic-bezier(.22,.8,.24,1),margin .45s cubic-bezier(.22,.8,.24,1),opacity .3s ease .1s,visibility 0s}.stickybar .bar a[data-top]{max-width:80px}.stickybar .bar a.cta{max-width:160px}html[data-bar="on"] .stickybar .bar{transform:translateY(-8px)}
 html.js:not([data-bar="on"]) .stickybar .bar{padding:3px!important;gap:0!important;background-color:rgba(8,49,81,.28)!important;box-shadow:none!important;-webkit-backdrop-filter:blur(0) saturate(100%)!important;backdrop-filter:blur(0) saturate(100%)!important}html.js:not([data-bar="on"]) .stickybar .bar a.item{color:#FFFFFF!important;padding:0 20px!important}html.js:not([data-bar="on"]) .stickybar .bar a.item:hover{background-color:rgba(255,255,255,.16)!important}html.js:not([data-bar="on"]) .stickybar .bar a[data-top],html.js:not([data-bar="on"]) .stickybar .bar a.cta{max-width:0!important;padding-left:0!important;padding-right:0!important;margin-left:0!important;margin-right:0!important;opacity:0;visibility:hidden;transition:color .35s ease,padding .45s cubic-bezier(.22,.8,.24,1),max-width .45s cubic-bezier(.22,.8,.24,1),margin .45s cubic-bezier(.22,.8,.24,1),opacity .15s ease,visibility 0s linear .45s}
 @media (prefers-reduced-motion:reduce){.stickybar .bar,.stickybar .bar a{transition:none!important}html[data-bar="on"] .stickybar .bar{transform:none}}
 html[data-section="top"] [data-nav="top"]{color:#1D5FD1!important;background-color:rgba(29,95,209,.13)!important}
-@media (max-width:380px){.tabbar{gap:6px!important;left:8px!important;right:8px!important}.tabbar .tab{font-size:10px!important;letter-spacing:-0.02em!important;padding-left:0!important;padding-right:0!important}.tabbar>a.tab{flex-basis:52px!important;width:52px!important;height:52px!important}}
+@media (max-width:380px){.tabbar{gap:6px!important;left:calc(8px + env(safe-area-inset-left))!important;right:calc(8px + env(safe-area-inset-right))!important}.tabbar .tab{font-size:10px!important;letter-spacing:-0.02em!important;padding-left:0!important;padding-right:0!important}.tabbar>a.tab{flex-basis:52px!important;width:52px!important;height:52px!important}}
 .ic-on{display:none}[aria-current] .ic-off{display:none}[aria-current] .ic-on{display:inline}
 html[data-section="offre"] [data-nav="offre"]:not(.cta){color:#1D5FD1!important;background-color:rgba(29,95,209,.13)!important}html[data-section="projets"] [data-nav="projets"]:not(.cta){color:#1D5FD1!important;background-color:rgba(29,95,209,.13)!important}html[data-section="methode"] [data-nav="methode"]:not(.cta){color:#1D5FD1!important;background-color:rgba(29,95,209,.13)!important}html[data-section="parcours"] [data-nav="parcours"]:not(.cta){color:#1D5FD1!important;background-color:rgba(29,95,209,.13)!important}html[data-section="contact"] .tab[data-nav="contact"]{color:#FFFFFF!important;background:#1D5FD1!important}html[data-section="contact"] .bar [data-top]{color:#1D5FD1!important;background-color:rgba(29,95,209,.13)!important}
 .line>span{display:block}
@@ -85,7 +89,7 @@ html.motion h2[data-reveal].in .line+.line>span{transition-delay:.09s}
 html.motion [data-reveal]>li{opacity:0;translate:0 28px}
 html.motion [data-reveal]>li.in{opacity:1;translate:none;transition:opacity .5s ease var(--d,0s),translate .7s cubic-bezier(.22,.8,.24,1) var(--d,0s),transform .35s cubic-bezier(.2,.8,.2,1)}
 }
-@media (max-width:820px){.topbar{display:flex!important;justify-content:space-between}.ctas{align-self:stretch!important;flex-direction:column;justify-content:center!important;align-items:center!important}.cta-solo{align-self:center!important}.topbar nav.seg{display:none!important}html.js .stickybar,.stickybar{display:none!important}.tabbar{display:flex}.pagefoot{padding-bottom:112px!important}.bento{grid-template-columns:1fr}.bento>.tile{grid-column:auto!important;grid-row:auto!important;min-height:200px}}
+@media (max-width:820px){.topbar{display:flex!important;justify-content:space-between}.ctas{align-self:stretch!important;flex-direction:column;justify-content:center!important;align-items:center!important}.cta-solo{align-self:center!important}.topbar nav.seg{display:none!important}html.js .stickybar,.stickybar{display:none!important}.tabbar{display:flex}.pagefoot{padding-bottom:calc(112px + env(safe-area-inset-bottom))!important}.bento{grid-template-columns:1fr}.bento>.tile{grid-column:auto!important;grid-row:auto!important;min-height:200px}}
 </style>
 
 </head>
@@ -366,6 +370,7 @@ html.motion [data-reveal]>li.in{opacity:1;translate:none;transition:opacity .5s 
     </footer>
   </section>
   </div>
+  <div class="statusbar" aria-hidden="true"></div>
   <nav class="tabbar" aria-label="Navigation" style="position: fixed; left: 12px; right: 12px; bottom: 14px; z-index: 60; align-items: center; gap: 10px">
     <div class="glass" style="flex: 1 1 auto; min-width: 0; display: flex; padding: 4px; border-radius: 999px">
       <a href="#top" data-nav="top" class="tab" style="flex: 1 1 0; min-width: 0; color: #083151; text-decoration: none; border-radius: 999px; padding: 7px 4px 6px; min-height: 52px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; font-size: 11px; font-weight: 600; letter-spacing: 0.01em"><svg width="24" height="24" aria-hidden="true" viewBox="0 0 48 48" fill="none" class="ic-off"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M7.50049 19.876v22.125c0 0.3978 0.15803 0.7793 0.43934 1.0607 0.28131 0.2812 0.66283 0.4393 1.06066 0.4393h9.00001v-12.75c0 -0.5967 0.2371 -1.1691 0.659 -1.591 0.4219 -0.4219 0.9943 -0.659 1.591 -0.659h7.5c0.5967 0 1.1691 0.2371 1.591 0.659 0.4219 0.4219 0.659 0.9943 0.659 1.591v12.75h9c0.3978 0 0.7794 -0.1581 1.0607 -0.4393 0.2813 -0.2814 0.4393 -0.6629 0.4393 -1.0607V19.876" stroke-width="3.6"></path> <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M45.0003 24.0011 25.0212 4.87605c-0.4687 -0.495 -1.5647 -0.50063 -2.0419 0L3.00024 24.0011" stroke-width="3.6"></path> <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M37.501 16.7827V6.00146h-4.5v6.46874" stroke-width="3.6"></path></svg><svg width="24" height="24" aria-hidden="true" viewBox="0 0 48 48" fill="none" class="ic-on"><path fill="currentColor" d="M24.5206 9.49567c-0.1395 -0.13355 -0.3252 -0.20807 -0.5185 -0.20807 -0.1931 0 -0.3788 0.07452 -0.5184 0.20807L6.22461 25.9833c-0.07331 0.0701 -0.13162 0.1543 -0.17141 0.2476 -0.03981 0.0933 -0.06027 0.1937 -0.06015 0.2952l-0.00282 15.4741c0 0.7957 0.31607 1.5587 0.87867 2.1213 0.5626 0.5626 1.32566 0.8787 2.12129 0.8787h9.00921c0.3979 0 0.7794 -0.1581 1.0607 -0.4394s0.4393 -0.6628 0.4393 -1.0606V30.7504c0 -0.1989 0.079 -0.3897 0.2197 -0.5304s0.3314 -0.2196 0.5303 -0.2196h7.4999c0.1989 0 0.3897 0.0789 0.5303 0.2196 0.1407 0.1407 0.2197 0.3315 0.2197 0.5304v12.7498c0 0.3978 0.158 0.7793 0.4394 1.0606 0.2812 0.2813 0.6628 0.4394 1.0606 0.4394h9.0055c0.7956 0 1.5587 -0.3161 2.1213 -0.8787 0.5626 -0.5626 0.8786 -1.3256 0.8786 -2.1213V26.5261c0.0002 -0.1015 -0.0203 -0.2019 -0.0601 -0.2952 -0.0398 -0.0933 -0.0981 -0.1775 -0.1714 -0.2476L24.5206 9.49567Z" stroke-width="3"></path> <path fill="currentColor" d="m46.0212 22.8898 -7.0124 -6.7087V6.00094c0 -0.39783 -0.1579 -0.77935 -0.4393 -1.06065 -0.2813 -0.2813 -0.6628 -0.43933 -1.0607 -0.43933h-4.4999c-0.3978 0 -0.7793 0.15803 -1.0606 0.43933s-0.4394 0.66282 -0.4394 1.06065V9.0009L26.079 3.80909c-0.5081 -0.51374 -1.2637 -0.80811 -2.0803 -0.80811 -0.8137 0 -1.5675 0.29437 -2.0756 0.80905L1.9828 22.8879c-0.58311 0.5625 -0.65624 1.4878 -0.12562 2.0972 0.13324 0.1538 0.2964 0.2789 0.47952 0.3676s0.3824 0.1393 0.58569 0.1486c0.20328 0.0093 0.40634 -0.0228 0.5968 -0.0945 0.19046 -0.0717 0.36436 -0.1814 0.51109 -0.3224L23.4831 6.49593c0.1396 -0.13352 0.3253 -0.20804 0.5184 -0.20804 0.1932 0 0.379 0.07452 0.5185 0.20804L43.9747 25.0844c0.2866 0.2748 0.6705 0.4248 1.0674 0.4171 0.397 -0.0078 0.7748 -0.1726 1.0504 -0.4583 0.5756 -0.5963 0.5278 -1.5806 -0.0713 -2.1534Z" stroke-width="3"></path></svg>Home</a>

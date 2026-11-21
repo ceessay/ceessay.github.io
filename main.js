@@ -62,6 +62,30 @@ var pastilles = (function () {
   };
 })();
 
+// Couleur de la barre d'état (Safari, Chrome Android, site installé) : celle de la section
+// qui passe sous le haut de l'écran. Safari sur iOS 26 lit le fond de page, les autres theme-color.
+var teinter = (function () {
+  var teintes = [
+    ['top', '#495BB2', 'fonce'], ['intro', '#F4F7F9', 'clair'], ['offre', '#FFFFFF', 'clair'],
+    ['projets', '#4558B0', 'fonce'], ['realisations', '#FFFFFF', 'clair'], ['methode', '#F4F7F9', 'clair'],
+    ['parcours', '#FFFFFF', 'clair'], ['contact', '#4564B7', 'fonce']
+  ];
+  var meta = document.querySelector('meta[name="theme-color"]');
+  var actuelle = '';
+  return function () {
+    var choix = teintes[0];
+    for (var i = 0; i < teintes.length; i++) {
+      var el = document.getElementById(teintes[i][0]);
+      if (el && el.getBoundingClientRect().top <= 1) choix = teintes[i];
+    }
+    if (choix[1] === actuelle) return;
+    actuelle = choix[1];
+    document.body.style.backgroundColor = choix[1];
+    if (meta) meta.setAttribute('content', choix[1]);
+    document.documentElement.setAttribute('data-tint', choix[2]);
+  };
+})();
+
 // Met en avant, dans les barres de navigation, la section affichée à l'écran.
 (function () {
   var plan = [
@@ -91,6 +115,7 @@ var pastilles = (function () {
     var menu = document.querySelector('.topbar');
     document.documentElement.setAttribute('data-bar', menu && menu.getBoundingClientRect().bottom < 30 ? 'on' : 'off');
     document.documentElement.setAttribute('data-section', active);
+    teinter();
     var liens = document.querySelectorAll('[data-nav]');
     for (var j = 0; j < liens.length; j++) {
       if (liens[j].getAttribute('data-nav') === active) liens[j].setAttribute('aria-current', 'location');
