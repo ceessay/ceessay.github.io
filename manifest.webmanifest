@@ -1,0 +1,17 @@
+{
+  "id": "/",
+  "name": "Mohamed CISSE · Ingénieur logiciel",
+  "short_name": "M. CISSE",
+  "description": "Ingénieur logiciel, expert en solutions numériques à Dakar. Conception, développement, déploiement et formation.",
+  "lang": "fr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F4F7F9",
+  "theme_color": "#4258B0",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

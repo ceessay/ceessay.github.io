@@ -20,6 +20,12 @@
     }
     var fin = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
     if (fin) active = 'contact';
+    // En haut de page : l'onglet Accueil est actif.
+    var heros = document.getElementById('top');
+    if (!active && heros && heros.getBoundingClientRect().bottom > ligne) active = 'top';
+    // La barre flottante n'apparaît qu'une fois le menu du haut sorti de l'écran.
+    var menu = document.querySelector('.topbar');
+    document.documentElement.setAttribute('data-bar', menu && menu.getBoundingClientRect().bottom < 0 ? 'on' : 'off');
     document.documentElement.setAttribute('data-section', active);
     var liens = document.querySelectorAll('[data-nav]');
     for (var j = 0; j < liens.length; j++) {
@@ -42,3 +48,10 @@
     });
   }
 })();
+
+// Application installable : service worker pour l'installation et la consultation hors ligne.
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('/sw.js').catch(function () {});
+  });
+}
