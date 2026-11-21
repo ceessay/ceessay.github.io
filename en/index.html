@@ -72,18 +72,12 @@ html[data-section="offre"] [data-nav="offre"]:not(.cta){color:#1D5FD1!important;
 .pill{position:absolute;left:0;top:0;border-radius:999px;background:rgba(29,95,209,.13);opacity:0;pointer-events:none;transition:opacity .2s ease}
 html.pill-ready .bar a.item[aria-current],html.pill-ready[data-section="contact"] .bar a[data-top],html.pill-ready .tabbar div.glass .tab[aria-current]{background-color:transparent!important}
 .more svg,.row>svg,h3 .plain svg{transition:transform .2s cubic-bezier(.22,.8,.24,1)}
-@keyframes rise{from{transform:translateY(105%)}}
-@keyframes fade-up{from{opacity:0;transform:translateY(12px)}}
 @keyframes settle{from{transform:scale(1.04)}}
 @media (prefers-reduced-motion:no-preference){
 .pill{transition:opacity .2s ease,transform .4s cubic-bezier(.22,.8,.24,1),width .4s cubic-bezier(.22,.8,.24,1)}
 .more:hover svg,.row:hover>svg{transform:translateX(3px)}
 h3 .plain:hover svg{transform:translate(2px,-2px)}
 .line{clip-path:inset(-50% -10% 0 -10%)}
-#top h1 .line>span{animation:rise .9s cubic-bezier(.22,.8,.24,1) .08s both}
-#top h1 .line+.line>span{animation-delay:.16s}
-.hero-kicker{animation:fade-up .6s cubic-bezier(.22,.8,.24,1) both}
-#top h1+.ctas{animation:fade-up .6s cubic-bezier(.22,.8,.24,1) .42s both}
 .hero-portrait{animation:settle 1.2s cubic-bezier(.22,.8,.24,1) both}
 html.motion h2[data-reveal] .line>span{transform:translateY(105%)}
 html.motion h2[data-reveal].in .line>span{transform:none;transition:transform .9s cubic-bezier(.22,.8,.24,1)}
@@ -119,10 +113,10 @@ html.motion [data-reveal]>li.in{opacity:1;translate:none;transition:opacity .5s 
 
     <div style="flex-grow: 1; display: flex; flex-wrap: wrap; align-items: stretch">
       <div style="flex: 1 1 560px; min-width: 0; position: relative; z-index: 1; padding: clamp(16px, 2vw, 32px) clamp(20px, 3vw, 48px) clamp(40px, 4.5vw, 64px); display: flex; flex-direction: column; justify-content: center">
-        <p class="hero-kicker" style="margin: 0; max-width: 24em; font-size: clamp(22px, 2.1vw, 30px); line-height: 1.25; font-weight: 600; letter-spacing: -0.02em"><span style="white-space: nowrap">Software Engineer</span> <span aria-hidden="true" style="opacity: 0.55; font-weight: 400; margin: 0 0.3em">|</span> <span style="white-space: nowrap">Digital Solutions Expert</span></p>
+        <p style="margin: 0; max-width: 24em; font-size: clamp(22px, 2.1vw, 30px); line-height: 1.25; font-weight: 600; letter-spacing: -0.02em"><span style="white-space: nowrap">Software Engineer</span> <span aria-hidden="true" style="opacity: 0.55; font-weight: 400; margin: 0 0.3em">|</span> <span style="white-space: nowrap">Digital Solutions Expert</span></p>
         <h1 style="margin: clamp(16px, 2vw, 28px) 0 0; font-weight: 700; font-size: clamp(56px, 10vw, 168px); line-height: 0.84; letter-spacing: -0.05em; text-transform: uppercase">
-          <span class="line" style="display: block"><span>Mohamed</span></span>
-          <span class="line" style="display: block"><span>CISSE</span></span>
+          <span style="display: block">Mohamed</span>
+          <span style="display: block">CISSE</span>
         </h1>
         <div class="ctas" style="margin-top: clamp(32px, 3.5vw, 48px); display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center">
           <a href="https://cal.com/mcisse" target="_blank" rel="noopener" class="cta cta-white" style="color: #083151; background: #FFFFFF; font-weight: 600; font-size: 19px; letter-spacing: -0.01em; text-decoration: none; border-radius: 999px; padding: 0 32px; min-height: 58px; display: inline-flex; align-items: center">Book a 30-minute call</a>
