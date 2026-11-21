@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /cv/cv.html
+Disallow: /cv/cv-en.html
 
 Sitemap: https://mcisse.pro/sitemap.xml

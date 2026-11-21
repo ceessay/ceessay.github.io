@@ -32,3 +32,13 @@
   window.addEventListener('resize', suivre);
   suivre();
 })();
+
+// Mémorise le choix de langue quand le visiteur clique sur FR ou EN.
+(function () {
+  var liens = document.querySelectorAll('a[hreflang]');
+  for (var i = 0; i < liens.length; i++) {
+    liens[i].addEventListener('click', function () {
+      try { localStorage.setItem('mcisse-lang', this.getAttribute('hreflang')); } catch (e) {}
+    });
+  }
+})();
