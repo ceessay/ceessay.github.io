@@ -1,7 +1,7 @@
 // Service worker : rend le site installable et consultable hors ligne.
 // Réseau d'abord (le contenu reste toujours à jour), copie locale en secours.
-var CACHE = 'mcisse-v1';
-var ESSENTIEL = ['/', '/en/', '/main.js', '/favicon.svg', '/fonts/urbanist-latin.woff2',
+var CACHE = 'mcisse-v2';
+var ESSENTIEL = ['/', '/en/', '/main.js', '/icons/favicon-32.png', '/fonts/urbanist-latin.woff2',
   '/manifest.webmanifest', '/img/portrait-profil-600.webp', '/img/portrait-profil-900.webp'];
 
 self.addEventListener('install', function (e) {

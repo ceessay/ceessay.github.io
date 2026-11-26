@@ -379,8 +379,11 @@ var teinter = (function () {
     if (!ouvreur) return;
     var r = ouvreur.getBoundingClientRect();
     var l = panneau.offsetWidth;
-    var gauche = Math.min(window.innerWidth - l - 12, Math.max(12, r.right - l));
+    // Bouton à gauche de l'écran : le nuancier s'ouvre vers la droite, et inversement.
+    var aGauche = r.left + r.width / 2 < window.innerWidth / 2;
+    var gauche = Math.min(window.innerWidth - l - 12, Math.max(12, aGauche ? r.left : r.right - l));
     panneau.style.left = gauche + 'px';
+    panneau.style.transformOrigin = aGauche ? 'top left' : 'top right';
     panneau.style.top = (r.bottom + 10) + 'px';
   }
 
